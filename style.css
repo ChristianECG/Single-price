@@ -24,6 +24,7 @@ main {
         'principal'
         'secundary'
         'thirth';
+    font-weight: 400;
 }
 
 #main {
@@ -34,11 +35,13 @@ main {
 #secundary {
     grid-area: secundary;
     background-color: hsl(179, 62%, 43%);
+    color: white;
 }
 
 #thirth {
     grid-area: thirth;
     background-color: hsl(179, 61%, 48%);
+    color: white;
 }
 
 #thirth ul {
@@ -51,4 +54,20 @@ main {
 
 h1 {
     font-size: 1.2rem;
+}
+
+#title {
+    color: hsl(179, 62%, 43%);
+}
+
+#subtitle {
+    color: hsl(71, 73%, 54%);
+}
+
+#description {
+    color: hsl(218, 22%, 67%);
+}
+
+#description-quantity {
+    color: hsl(204, 43%, 93%);
 }
