@@ -1,7 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    grid-template-areas:
+        'principal'
+        'secundary'
+        'thirth';
+}
+
+#main {
+    grid-area: principal;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#secundary {
+    grid-area: secundary;
+    background-color: hsl(179, 62%, 43%);
+}
+
+#thirth {
+    grid-area: thirth;
+    background-color: hsl(179, 61%, 48%);
+}
+
+#thirth ul {
+    list-style: none;
+}
+
+.container {
+    padding: 1rem;
 }
