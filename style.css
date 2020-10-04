@@ -6,6 +6,7 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: 1rem 0;
 }
 
 .attribution a {
@@ -15,11 +16,13 @@
 body {
     background-color: hsl(204, 43%, 93%);
     font-family: 'Karla', sans-serif;
+    font-size: 93.75%;
 }
 
 main {
     width: 80%;
     margin: 0 auto;
+    display: grid;
     grid-template-areas:
         'principal'
         'secundary'
@@ -30,26 +33,37 @@ main {
 #main {
     grid-area: principal;
     background-color: hsl(0, 0%, 100%);
+    line-height: 1.5rem;
 }
 
 #secundary {
     grid-area: secundary;
     background-color: hsl(179, 62%, 43%);
     color: white;
+    display: grid;
+    grid-template-areas:
+        'title title'
+        'quantity desc-quant'
+        'desc desc'
+        'button button';
+    grid-template-columns: min-content;
+    column-gap: 1rem;
 }
 
 #thirth {
     grid-area: thirth;
     background-color: hsl(179, 61%, 48%);
     color: white;
+    line-height: 1.2rem;
 }
 
 #thirth ul {
     list-style: none;
+    color: hsl(204, 43%, 93%);
 }
 
 .container {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 h1 {
@@ -58,16 +72,50 @@ h1 {
 
 #title {
     color: hsl(179, 62%, 43%);
+    padding: 1rem 0;
 }
 
 #subtitle {
     color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 0 0 1rem 0;
 }
 
 #description {
     color: hsl(218, 22%, 67%);
 }
 
+#secundary__title {
+    padding: 1rem 0;
+    grid-area: title;
+}
+
+#quantity {
+    font-size: 2rem;
+    grid-area: quantity;
+}
+
 #description-quantity {
     color: hsl(204, 43%, 93%);
+    grid-area: 'desc-quantity';
+}
+
+#secundary__description {
+    grid-area: desc;
+}
+
+#signup-button {
+    margin: 1rem 0;
+    padding: 1rem;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 0.5rem;
+    text-align: center;
+    grid-area: button;
+    box-shadow: 0.3rem 0.3rem hsl(0, 0%, 82%);
+}
+
+#thirth__title {
+    margin-bottom: 1rem;
 }
